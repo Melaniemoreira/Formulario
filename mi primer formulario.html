@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Formulario de Cliente - Ferretería</title>
 </head>
 <body>
+  <h1>Formulario de Cliente - Ferretería</h1>
 
+  <form action="procesar_formulario.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+    <label for="direccion">Dirección:</label>
+    <textarea id="direccion" name="direccion" rows="4" cols="30" required></textarea><br><br>
+
+    <label for="producto">Producto de interés:</label>
+    <select id="producto" name="producto">
+      <option value="herramientas">Herramientas</option>
+      <option value="materiales">Materiales de construcción</option>
+      <option value="pinturas">Pinturas</option>
+      <option value="cerrajeria">Cerrajería</option>
+      <option value="electricidad">Material eléctrico</option>
+    </select><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
